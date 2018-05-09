@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-import PIL.Image
+# import PIL.Image
 from random import shuffle
 
 from photos.choices import *
@@ -38,9 +38,9 @@ def new_photo(request):
 
 def full_photo(request, pk):
     full_photo = get_object_or_404(Photo, pk=pk)
-    img = PIL.Image.open('.'+full_photo.image.url)
-    exif = img._getexif()
-    context = {'full_photo': full_photo, 'categories': cat_list, 'exif': exif}
+#    img = PIL.Image.open('.'+full_photo.image.url)
+#    exif = img._getexif()
+    context = {'full_photo': full_photo, 'categories': cat_list}
     return render(request, 'photos/full_photo.html', context)
 
 
