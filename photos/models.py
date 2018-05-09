@@ -1,7 +1,7 @@
 from django.db import models
 from photos.choices import *
 from django.utils import timezone
-import PIL.Image
+# import PIL.Image
 
 
 class Photo(models.Model):
