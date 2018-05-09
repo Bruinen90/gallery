@@ -1,0 +1,36 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>max machnik - fotografia</title>
+    <!-- external fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300&amp;subset=latin-ext" rel="stylesheet">
+    <!-- /external -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/photos.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
+</script>
+</head>
+<body>
+<div class="loader"></div>
+<div class="main_title"><a href="{% url 'home' %}">max machnik &#183; fotografia</a></div>
+
+{% include 'photos/cat_list.html' %}
+
+<div class="content">
+{% block content %}
+{% endblock %}
+</div>
+<div class="add_new_photo"><a href="{% url 'new_photo' %}">Add a new photo</a></div>
+</body>
+</html>

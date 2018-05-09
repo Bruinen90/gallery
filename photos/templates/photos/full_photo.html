@@ -1,0 +1,41 @@
+{% extends 'photos/base.html' %}
+
+{% block content %}
+<div class="photo_full">
+
+    <img class="full_photo" src="{{ full_photo.image.url }}">
+</div>
+<div class="full_photo_title">{{ full_photo.title }}</div>
+   <div class="photo_description"> {{ full_photo.description }}</div>
+   <div class="photo_published">
+       Kategoria: <a href="{% url 'category_view' selected_category=full_photo.category %}">
+       {{ full_photo.get_category_display }}</a>
+   <div class="photo_published">
+       Data publikacji:
+       {{ full_photo.published }}</div>
+
+       <br><br>
+
+<div class="exif_title">
+    Dane EXIF</div>
+<div class="exif">
+        {% for key, value in exif.items %}
+        {% if key == 272 %}
+        Aparat: {{ value }}
+        <br>
+        {% endif %}
+
+        {% if key == 42036 %}
+        Obiektyw: {{ value }}
+        <br>
+        {% endif %}
+
+        {% if key == 36868 %}
+        Data wykonania: {{ value }}
+        <br>
+        {% endif %}
+
+        {% endfor %}
+    </div>
+
+{% endblock %}

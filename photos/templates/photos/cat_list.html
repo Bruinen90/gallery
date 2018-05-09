@@ -1,0 +1,14 @@
+
+
+{% block cat_list %}
+<ul class="nav">
+  {% for x, y in categories.items %}
+    <li>
+      <a href="{% url 'category_view' selected_category=x %}">{{ y }}</a>
+    </li>
+{% endfor %}
+</ul>
+
+<br>
+
+{% endblock %}
