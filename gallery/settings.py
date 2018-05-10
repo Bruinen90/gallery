@@ -25,7 +25,7 @@ SECRET_KEY = 'm+*eel4vo8jz3snbk*6vp)4ve7d!%0n3)$v8b&@32jge7il7g+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bruinen.pythonanywhere.com']
+ALLOWED_HOSTS = ['bruinen.pythonanywhere.com', 'http://127.0.0.1:8000']
 
 
 # Application definition
