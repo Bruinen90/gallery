@@ -7,7 +7,7 @@ body {
 }
 
 div.main_title {
-    font-size: 54px;
+    font-size: 44px;
     text-align: center;
     letter-spacing: 15px;
     padding-bottom: 15px;
@@ -106,7 +106,7 @@ div.content {
     float: none;
     margin: 0 auto;
     display: block;
-    font-size: 24px;
+    font-size: 36px;
 }
 .nav li{
     display: inline;
