@@ -1,0 +1,145 @@
+body {
+    color: #8c8c8c;
+    font-family: 'Quicksand', sans-serif;
+    font-variant-ligatures: no-common-ligatures;
+    padding-top: 15px;
+
+}
+
+div.main_title {
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-bottom: 15px;
+}
+
+div.full_photo_title {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 15px;
+    padding-bottom: 20px;
+}
+
+div.full_photo_description {
+    text-align: center;
+}
+
+.photo_title {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+div.photo_description {
+    text-align: center;
+    font-size: 14px;
+
+}
+
+div.photo_published {
+    text-align: center;
+    font-size: 16px;
+    color: grey;
+
+}
+
+div.add_new_photo {
+    text-align: right;
+
+}
+
+div.exif {
+    text-align: center;
+    color: grey;
+    font-size: 16px;
+}
+
+.exif_title {
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid #cccccc;
+    width: 250px;
+}
+
+a {
+    color: #8c8c8c;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #595959;
+}
+
+img.img-thumbnail {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+img.full_photo {
+    max-height: 900px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+div.content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+}
+
+
+
+.nav{
+    border: 1px solid #cccccc;
+    border-width: 1px 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+    display: block;
+}
+.nav li{
+    display: inline;
+    margin: 8px;
+}
+.nav a{
+    display: inline-block;
+    padding: 10px;
+}
+
+
+.karuzela {
+    width: 100%;
+    position: relative;
+    height:100%;
+
+}
+
+.photo_karuzela {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    max-height: 1100px;
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('/media/loading.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: 0.9;
+}
