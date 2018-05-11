@@ -1,6 +1,9 @@
 {% extends 'photos/base.html' %}
 
 {% block content %}
+{% if request.user_agent.is_mobile %}
+  Mobile stuff
+{% endif %}
 
 <div id="demo" class="carousel slide" data-ride="carousel">
 
