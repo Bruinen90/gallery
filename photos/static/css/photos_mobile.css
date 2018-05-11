@@ -3,19 +3,17 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-variant-ligatures: no-common-ligatures;
     padding-top: 15px;
-    background-color: red;
-    font-size: 24px;
 }
 
 div.main_title {
-    font-size: 44px;
+    font-size: 50px;
     text-align: center;
     letter-spacing: 15px;
     padding-bottom: 15px;
 }
 
 div.full_photo_title {
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     letter-spacing: 15px;
     padding-bottom: 20px;
@@ -39,7 +37,7 @@ div.photo_description {
 
 div.photo_published {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     color: grey;
 
 }
@@ -52,7 +50,7 @@ div.add_new_photo {
 div.exif {
     text-align: center;
     color: grey;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .exif_title {
@@ -107,7 +105,7 @@ div.content {
     float: none;
     margin: 0 auto;
     display: block;
-    font-size: 36px;
+    font-size: 24px;
 }
 .nav li{
     display: inline;
