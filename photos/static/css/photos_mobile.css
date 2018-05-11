@@ -3,7 +3,8 @@ body {
     font-family: 'Quicksand', sans-serif;
     font-variant-ligatures: no-common-ligatures;
     padding-top: 15px;
-
+    background-color: red;
+    font-size: 24px;
 }
 
 div.main_title {
