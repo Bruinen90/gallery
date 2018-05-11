@@ -52,7 +52,10 @@ def category_view(request, selected_category):
 
 def home(request):
     global cat_list
-    horiz = Photo.objects.filter(aspect_ratio='horizontal')
+    if request.user_agent.is_mobile:
+        horiz = Photo.objects.filter(aspect_ratio='horizontal')
+    else:
+        horiz = Photo.objects.filter(aspect_ratio='vertical')
     random = [o for o in horiz]
     shuffle(random)
     first = random[:1]
