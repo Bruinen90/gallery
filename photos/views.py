@@ -52,7 +52,7 @@ def category_view(request, selected_category):
 
 def home(request):
     global cat_list
-    if request.user_agent.is_mobile:
+    if request.user_agent.is_mobile==True:
         horiz = Photo.objects.filter(aspect_ratio='vertical')
     else:
         horiz = Photo.objects.filter(aspect_ratio='horizontal')
